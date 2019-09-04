@@ -1,0 +1,26 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: API Eolien Terrestre
+  description: Une API liée au géostandard COVADIS Eolien Terrestre v2.0
+  license:
+    name: ODbL-1.0
+    url: https://spdx.org/licenses/ODbL-1.0.html
+schemes:
+- http
+host: localhost:8181
+basePath: /eolien
+paths: {}
+definitions:
+  Error:
+    type: object
+    properties:
+      code:
+        type: integer
+        description: Code HTTP de l'erreur
+      message:
+        type: string
+        description: Libellé de l'erreur
+      description:
+        type: string
+        description: Explication
